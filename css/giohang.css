@@ -1,0 +1,87 @@
+.ttcn {
+    font-size: large;
+}
+
+.tt>td {
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    border-bottom: 1px dotted gray;
+    height: 90px;
+}
+
+tr>th {
+    width: 300px;
+    line-height: 50px;
+    background-color: #f5f5f7;;
+}
+
+#gioahang>tr>td>button {
+    width: 80px;
+    padding: 5px;
+    background-color: rgb(216, 201, 230);
+    border: none;
+}
+
+td>img {
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.deleteButton {
+    background: transparent;
+    font-weight: 600;
+    font-size: xx-large;
+    color: #f00;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 2px;
+    margin: 0 0 8px;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+    border: none;
+}
+
+.deleteButton:hover {
+    font-weight: 900;
+}
+
+.tongconggiaohang {
+    float: right;
+    width: 600px;
+    padding: 10px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.tongconggiaohang>a>button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color:#fa656f;
+    color: white;
+    font-size: larger;
+    font-weight:400;
+}
+.tongconggiaohang>a>button:hover{
+    background-color:#f33845;
+}
+#capnhat{
+    padding: 15px;
+    color: white;
+    background-color: #7ba9cf;
+    border: none;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#capnhat:hover{
+    background-color: #4f9fe0;
+
+}
+.sl{
+    width: 60px;
+    height: 40px;
+    text-align: center;
+}

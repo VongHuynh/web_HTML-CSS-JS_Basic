@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực phẩm bổ sung-dinh dưỡng thể hình</title>
+    <link rel="stylesheet" href="css/CHECKOUT.css">
+    <script src="js/checkout.js" defer></script>
+
+
+</head>
+
+<body onload="thanhtien()">
+
+
+    <nav>
+        <div class="tt1"></div>
+    </nav>
+    <div class="box_center">
+
+
+        <div id="trangcart">
+            <table id="giohang" style="border-collapse: collapse;">
+                <h1 style="text-align: center;border-bottom: 2px solid #f1f1f1; margin-bottom: 5px; ">Đơn hàng của bạn
+                </h1>
+
+                <tr>
+                    <th style="width: 20px;"></th>
+                    <th style="width: 700px;">Sản phẩm</th>
+                    <th style="width: 200px;">Giá</th>
+                    <th style="width: 200px;">Số lượng</th>
+                    <th style="width: 200px;">Tạm tính</th>
+                </tr>
+
+                <tr class="tt">
+                    <td><button onclick="xoa(this)" class="deleteButton">X</button></td>
+                    <td> <span>creatine changed</span> </td>
+                    <td> 400000</td>
+                    <td><input class="sl" type="number" min="1" max="10" value="1" onblur="thanhtien()"></td>
+                    <td></td>
+                </tr>
+                <tr class="tt">
+                    <td><button onclick="xoa(this)" class="deleteButton">X</button></td>
+                    <td><span>sleepmode 30sv</span> </td>
+                    <td>350000</td>
+                    <td><input class="sl" type="number" min="1" max="10" value="1" onblur="thanhtien()"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <table>
+                    <h3
+                        style="width: 100%;text-align: center;height: 40px;line-height: 40px;background-color: #fbae40; color: white;margin-bottom: 20px;margin-top: 5px;">
+                        Cộng giỏ hàng</h3>
+                    <tr>
+                        <td>
+                            <h2 style="color: red;">Tổng tiền: <span id="tongtien">0</span> đồng</h2>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <span id="km2"></span>
+                        <span id="km">
+                            <h4>Khuyến mãi:</h4>
+                            <input onclick="thanhtien()" id="kmcheck1" style="margin-left: 30px;" type="radio"
+                                name="khuyenmai" checked>Miễn phí vận
+                            chuyển <br>
+                            <input onclick="thanhtien()" id="kmcheck" style="margin-left: 30px;" type="radio"
+                                name="khuyenmai">Tặng shaker 700ml
+                        </span>
+                    </tr>
+
+                </table>
+
+            </table>
+
+
+        </div>
+
+
+        <div id="thongtinthanhtoan">
+            <form action="xuly.php" method="GET">
+                <div class="container">
+                    <h1>Thông tin thanh toán</h1>
+
+                    <hr>
+
+                    <label for="email"><b>Họ và tên</b></label>
+                    <input type="text" placeholder="Nhập họ tên" name="hoten" id="hoten" required>
+
+                    <label for="email"><b>Số điện thoại</b></label>
+                    <input type="text" placeholder="Nhập số điện thoại" id="sdt" required onblur="checkphone()">
+                    <div style="margin-bottom: 10px; font-size: small;color: red;margin-left: 5px;" id="trave1"></div>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Nhập Email" id="email" required onblur="checkemail()">
+                    <div style="margin-bottom: 10px;font-size: small;color: red; margin-left: 5px;" id="trave2"></div>
+
+                    <label for=""><b>Tỉnh</b></label> <br> <br>
+                    <select name="" id="tinh" required>
+                        <option value="">Vui lòng chọn Tỉnh/Thành phố</option>
+                        <option value="1">TP HCM</option>
+                        <option value="2">Hà Nội</option>
+                    </select>
+                    <div style="margin-bottom: 10px;font-size: small;color: red; margin-left: 5px;" id="trave3"></div>
+
+
+                    <label for=""><b>Quận/Huyện</b></label> <br> <br>
+                    <select name="" id="quan" required>
+                        <option value="" >Vui lòng chọn Quận/Huyện</option>
+                        <option value="1">Quận Bình Thạnh</option>
+                        <option value="2">Quận 1</option>
+                    </select>
+                    <div style="margin-bottom: 10px;font-size: small;color: red; margin-left: 5px;" id="trave4"></div>
+
+                    <label for=""><b>Phường/Xã</b></label> <br> <br>
+                    <select name="" id="xa" required>
+                        <option value="">Vui lòng chọn Phường/Xã</option>
+                        <option value="1">Xã Tân Thuận</option>
+                        <option value="2">Xã Tân Tiến</option>
+                    </select>
+                    <div style="margin-bottom: 10px;font-size: small;color: red; margin-left: 5px;" id="trave5"></div>
+
+
+
+                    <label for="email"><b>Địa chỉ</b></label>
+                    <input type="text" placeholder="Nhập địa chỉ" name="diachi" required>
+
+                    <label for=""><b>Ghi chú</b></label>
+                    <textarea name="ghichu" id="" cols="90" rows="3" placeholder="Ghi chú..."
+                        style="padding: 10px;font-family: sans-serif;"></textarea>
+
+                    <label for="email"><b>Hình thức thanh toán</b></label> <br>
+                    <div style="margin-left: 50px; font-family:serif;">
+                        <input style="margin-top: 10px;" type="radio" name="gioitinh" checked> Thanh toán khi nhận hàng
+                        <br>
+                        <input type="radio" name="gioitinh"> Chuyển khoản <br>
+                        <input type="radio" name="gioitinh"> Hẹn giờ giao hàng/ giao siêu tốc <br> <br>
+                    </div>
+
+                    <input type="checkbox" id="radioxuathoadon" onclick="checkxuat()"> Xuất hóa đơn
+                    <div id="xuathoadon">
+                        <div class="xuathoadon">Quý khách cần xuất hóa đơn vui lòng nhập thông tin dưới đây</div>
+                        <input type="text" placeholder="Nhập thông tin người nhận hóa đơn" id="ttnn" >
+                        
+                        <input type="text" placeholder="Nhập tên công ty" id="ttct" >
+                        <textarea style="padding: 5px; font-family: sans-serif;" name="" id="" cols="95" rows="4"
+                            placeholder="Nhập địa chỉ công ty bao gồm tỉnh/tp, quận, huyện"></textarea>
+                    </div>
+                    <div class="clearfix">
+                        <button type="submit" id="but" class="signupbtn">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

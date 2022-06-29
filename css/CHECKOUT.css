@@ -1,0 +1,225 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    padding: 0px;
+    margin: 0 auto;
+   
+}
+
+
+
+.box_center{
+    width: 100%;
+    height: auto;
+    background-color:white;
+    padding-top: 10px;
+   
+  
+}
+
+
+.box_center2{
+    width: 100%;
+    height: auto;
+   
+}
+
+/*  TT1 */
+.tt1{
+    background-color:#fbae40;
+    width: 100%;
+    min-height:50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+}
+
+
+
+
+
+
+/* GIO HANG */
+.ttcn {
+    font-size: large;
+}
+
+.tt>td {
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    border-bottom: 1px dotted gray;
+    height: 90px;
+}
+
+tr>th {
+    width: 300px;
+    line-height: 50px;
+    background-color: #f5f5f7;;
+}
+
+#gioahang>tr>td>button {
+    width: 80px;
+    padding: 5px;
+    background-color: rgb(216, 201, 230);
+    border: none;
+}
+
+td>img {
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.deleteButton {
+    background: transparent;
+    font-weight: 600;
+    font-size: xx-large;
+    color: #f00;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 2px;
+    margin: 0 0 8px;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+    border: none;
+}
+
+.deleteButton:hover {
+    font-weight: 900;
+}
+
+.tongconggiaohang {
+    float: right;
+    width: 600px;
+    padding: 10px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+#capnhat{
+    padding: 15px;
+    color: white;
+    background-color: #7ba9cf;
+    border: none;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#capnhat:hover{
+    background-color: #4f9fe0;
+
+}
+.sl{
+    width: 60px;
+    height: 40px;
+    text-align: center;
+}
+#trangcart{
+    width: 32%;
+    float: right;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: small;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 20px;
+
+}
+#thongtinthanhtoan{
+width: 50%;
+   float: right;
+   margin-right: 80px;
+   padding: 20px;
+   font-family: sans-serif;
+   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+   
+
+}
+
+
+
+
+h1, label{
+  color: DodgerBlue;
+}
+
+/* Full-width input fields */
+ input[type=text], input[type=password] {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    width:96%;
+    resize: vertical;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  select{
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    width:100%;
+    resize: vertical;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  select:focus{
+    outline: none;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+  
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #f5ba1a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+   
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .signupbtn {
+    float: left;
+    width: 100%;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .xuathoadon{
+    font-size: small;
+    color: red;
+  }
+  
+  /* Add padding to container elements */
+
+  
+  /* Clear floats */

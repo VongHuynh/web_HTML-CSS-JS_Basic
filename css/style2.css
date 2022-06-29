@@ -1,0 +1,527 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    padding: 0px;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    margin: 0px auto;
+}
+/* HEADER*/
+.container>header{
+    background-color: white;
+    height: 80px auto;  
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon4{
+    width:20px ;
+    height: 20px;
+    vertical-align: middle;
+}
+.iconmore{
+   position: absolute;
+   text-align: center;
+}
+.gh>a:hover{
+    text-decoration: underline;
+}
+/* THE DIV*/
+div>a{
+    text-decoration: none;
+    color:black;
+    margin-right: 10px;
+}
+.dangnhap{
+    font-size:medium;
+    position: relative; 
+    margin-right: 50px;
+}
+.logoshop{
+    width:279px;
+    height:90px; 
+    vertical-align: middle;
+}
+div>img{
+    width: 20px;
+    height: 20px;   
+    vertical-align: middle;
+}
+.glv{
+    font-size:medium;
+    color: white;
+    margin-right: 50px;
+}
+.gh{
+    font-size:medium;
+    margin-right: 50px;
+}
+
+
+
+/* menu con*/
+.menucon>li>a{
+    text-decoration: none;
+    color: black;
+    font-size:larger;  
+    display: flex;
+    border: 0.1px solid rgb(238, 236, 236);
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+.menucon{
+    margin-top: 13px;
+    text-align: left;
+    width: 240px;
+    border-radius: 5px;
+    margin-left: -30px;
+    
+}
+.menucon> li> a:hover{
+    
+    background-color: #f3d4a5;
+    transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+}
+.tt1 ul li{
+    position: relative;
+}
+.tt1>ul>li>.menucon{
+    display: none;
+    list-style: none;
+    background-color: white;
+    position: absolute;  
+}
+
+.tt1 ul li:hover>ul{
+    display: block;
+} 
+/*menu chau*/
+.menuchau{
+    display:none;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: -35px;
+    width: 200px;
+    border-radius: 0px 0px 3px 3px;
+}
+.menuchau>li>a:hover{
+    color:#fbae40;
+    
+}
+.menuchau>li>a{
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    font-family: sans-serif;
+    display: block;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.menuchaubox2{
+    list-style: none;
+    margin-left: 70px;
+     
+}
+.menuchaubox2>li>a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    display: block;
+    line-height: 35px; 
+}
+
+.menuchaubox2>li>a:hover{
+    color: red;
+    text-decoration: solid;
+}
+
+/*  BOX CENTER   */
+
+.spbc{
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: center;
+color: #555;
+border-bottom: 1px solid #fbae40;
+font-size: x-large;
+width: max-content;
+
+}
+
+
+.box_center{
+    width: 100%;
+    height: auto;
+    background-color:white;
+    padding-top: 20PX;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box_center>.banner{
+    width: 90%;
+    height: 90%;
+    margin-top: 0px;
+   
+}
+
+
+.box_center2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+.box1{
+    width: 85%;
+    height: 1000px auto;
+    background-color:white;
+    order: 2;
+}
+.boxsp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.box2{
+    width: 22%;
+    min-height: 650px;
+    background-color: white;
+    order: 1;
+    border: 1px solid rgb(192, 190, 190);
+    margin-left: 15px;
+    margin-top: -50px;
+    border-radius: 5px;
+    display: block;
+    line-height: 50px;
+    
+}
+.box2>ul>a{
+    text-decoration: none;
+    list-style:none;
+    color: black;
+    font-size:18px;
+    font-family: sans-serif;
+   
+}
+.box2>ul>a>li{
+   
+    margin-left: 30px;
+   
+    list-style:circle;
+}
+.box2>ul>a>li:hover{
+    color:red;
+    text-decoration: underline;
+
+}
+/* TT1*/
+.tt1{
+    background-color:#fbae40;
+    width: 100%;
+    min-height:50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+}
+
+.tt1>ul>li{
+    list-style:none;
+    position: relative;
+    float: left;
+    padding-right: 50px;   
+}
+.tt1>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-variant: normal;
+}
+
+.tt1> ul> li>a:hover{
+    color:rgb(245, 231, 231);
+}
+
+/* BOX_CENTER3*/
+.box_center3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.box_center3>img{
+    width: 150px;
+    height: 47.8px;
+}
+.thuonghieu{
+    color: rgb(121, 116, 116);
+    font-size: xx-large;
+
+}
+
+
+.bannercon{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.bannercon>a>img{
+    width: 473px;
+    height: 168px;
+}
+
+
+
+.bannergiaohang{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.bannergiaohang>img{
+    width: 1000px;
+    height: 230px;
+}
+
+
+/* san pham trang chu*/
+.sp>a>img{
+    width: 60%;
+    height: 60%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.sp:hover{
+    transform: scale(1.1); 
+    box-shadow:1px 6px 8px 4px #e7e7e7; 
+}
+
+.sp{
+    position: relative;
+    width: 220px;
+    min-height: 160px;
+   
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+div>a>.ten{
+    font-size:medium;
+    font-family:cursive;
+    color:black;
+    margin-top: 5px;
+}
+div>a>.gia{
+    color:red;
+    font-weight:bolder;
+    font-size: large;
+    text-align: center;
+   
+}
+
+/* footer*/
+
+.container>footer{
+    width: 1500;
+    border-top: 5px double orangered;
+    height:350px ;
+    background-color:#666360;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 40px;
+    display: flex;
+    
+}
+footer>.thongtin{
+    width: 30%;
+    min-height:200px;
+    word-spacing: 5px;
+    color: white;
+    text-align: left;
+    
+    margin-right: 50px;
+}
+footer>.thongtin>span{
+    color:#fbae40;
+    font-size: x-large;
+}
+footer>.gioithieu{
+    width: 30%;
+    min-height:200px;
+    word-spacing: 5px;
+    color: white;
+    text-align: left;
+    
+    margin-right: 50px;
+}
+footer>.facebook{
+   
+    width: 30%;
+    min-height:200px;
+    word-spacing: 5px;
+    color: white;
+    text-align: left;
+    
+    margin-right: 50px;
+}
+
+/*  SEARCH */
+input[type="text"] {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 202, 202);
+    border-radius: 5px 0px 0px 5px;
+    outline:none;
+    padding: 5px;
+  }
+  input:hover{
+      background-color:#f3e3cc;
+  }
+ .icons>img{
+     width: 25px;
+     height: 25px;
+ }
+ .icons{
+    color: white;
+    float: right;
+    width: 45px;
+    height: 38px;
+    background:#fbae40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(209, 202, 202);
+    border-radius: 0px 5px 5px 0px;
+}
+/**/
+
+/* NEXT*/
+.next{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    margin-top:40px ;
+}
+.next button{
+    margin: 5px;
+    border: 1px solid rgb(194, 191, 191);
+    min-width: 33px;
+    height: 33px;
+    background-color: white;
+    padding: 5px;
+}
+.next button:hover{
+    background-color: #fbae40;
+}
+.subnext{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+
+
+
+/*   */
+  .container2{
+      display: flex;
+      width: 100%;
+      height:700px ;
+      flex-direction: row;
+      margin-top: 50px;
+  }
+  .thongtinsp{
+      width: 70%;
+      height: 600px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+  }
+.thongtinsp>img{
+    width: 35%;
+    height: 300px;
+}
+.thongtinsp>img:hover{
+    transform:scale(1.2);
+   
+}
+
+.text{
+    width: 75%;
+    height: 200px;
+    text-align: left;
+    font-family: sans-serif;
+    padding-left: 50px;
+    padding-right: 30px;
+    color: rgb(97, 96, 96);
+}
+
+
+
+
+
+  .muahang{
+      width: 30%;
+      height: 450px;
+      padding-left: 40px;
+      border-left: 1px dotted #fbae40;
+      color: rgb(97, 96, 96);
+      
+  }
+  .input_text{
+      font-size: medium;
+      font-family: sans-serif;
+  }
+  .text_1{
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: larger;
+      color: cornflowerblue;
+      
+  }
+  .text_button{
+      font-size:large;
+      font-family: sans-serif; 
+      color: white;
+      background-color: rgb(245, 42, 42);
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+  }
+  .text_button:hover{
+      background-color: rgb(235, 112, 112);
+  }

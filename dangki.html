@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+  <link rel="stylesheet" href="css/dangki.css">
+</head>
+
+<body>
+  <form action="">
+    <div class="container">
+      <h1>Đăng Ký</h1>
+      <p>Xin hãy nhập đầy đủ thông tin bên dưới để đăng ký.</p>
+      <hr>
+
+      <label for="email"><b>Họ và tên</b></label>
+      <input type="text" placeholder="Nhập họ tên" name="hoten" required>
+
+      <label for="email"><b>Giới tính</b></label> <br>
+      <input style="margin-top: 10px;" type="radio" name="gioitinh" checked> Nam <br>
+      <input type="radio" name="gioitinh"> Nữ <br> <br>
+
+
+      <label for="email"><b>Số điện thoại</b></label>
+      <input type="text" placeholder="Nhập số điện thoại" id="sdt" required onblur="checkphone()">
+      <div style="margin-bottom: 10px; font-size: small;color: red;margin-left: 5px;" id="trave1"></div>
+
+      <label for="email"><b>Địa chỉ</b></label>
+      <input type="text" placeholder="Nhập địa chỉ" name="diachi" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Nhập Email" id="email" required onblur="checkemail()">
+      <div style="margin-bottom: 10px;font-size: small;color: red; margin-left: 5px;" id="trave2"></div>
+
+
+      <label for="psw"><b>Mật Khẩu</b></label>
+      <input type="password" placeholder="Nhập Mật Khẩu" id="psw" required>
+
+      <label for="psw-repeat"><b>Nhập Lại Mật Khẩu</b></label>
+      <input type="password" placeholder="Nhập Lại Mật Khẩu" id="psw-repeat" required onblur="checkpass()">
+      <div style="margin-bottom: 10px;font-size: small;color: red; margin-left: 5px;" id="trave3"></div>
+
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Nhớ Đăng Nhập
+      </label>
+
+      <div class="clearfix">
+        <button type="submit" id="but" class="signupbtn" onclick="checkpass()">Sign Up</button>
+      </div>
+    </div>
+    <script>
+     
+      function checkemail() {
+        // check định dạng email
+        var email = document.getElementById("email");
+        var reg = /^\w+@\w+\.com/
+        if (email.value.match(reg)) {
+          email.style.border = "none";
+          document.getElementById("trave2").innerHTML = "";
+        } else {
+          document.getElementById("trave2").innerHTML = ("Vui lòng nhập đúng định dạng email");
+          email.focus();
+          email.style.border = "1px solid red";
+          return false;
+        }
+      }
+      function checkphone() {
+        //check sdt
+        var phonepatten = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        var phonenum = document.getElementById("sdt");
+        if (sdt.value.match(phonepatten)) {
+          phonenum.style.border = "none";
+          document.getElementById("trave1").innerHTML = "";
+        } else {
+          document.getElementById("trave1").innerHTML = ("Vui lòng nhập đúng định dạng số điện thoại");
+          phonenum.focus();
+          phonenum.style.border = "1px solid red";
+          return false;
+        }
+      }
+
+
+      function checkpass() {
+        //so sánh 2 mật khẩu
+        var pass = document.getElementById("psw");
+        var repass = document.getElementById("psw-repeat");
+        if (pass.value == repass.value) {
+          document.getElementById("trave3").innerHTML = "";
+          document.getElementById("but").disabled = false;
+          pass.style.border = "none";
+          repass.style.border = "none";
+        } else {
+          document.getElementById("trave3").innerHTML = "Mật khẩu không chính xác";
+          pass.style.border = "1px solid red";
+          repass.style.border = "1px solid red";
+          document.getElementById("but").disabled = true;
+          return false;
+        }
+      }
+    </script>
+  </form>
+</body>
+
+</html>

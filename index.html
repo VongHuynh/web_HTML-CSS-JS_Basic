@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực phẩm bổ sung-dinh dưỡng thể hình</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/slideshow.js"></script>
+    <script src="js/CLASSsp.js"></script>
+    <script src="js/sanpham.js" defer></script>
+    <script src="js/menuDOM.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body onload="loading()">
+    <div class="container">
+        <header>
+            <div>
+                <img class="logoshop" src="hinhanh/logohp.png" alt=""></li>
+            </div>
+            <form>
+                <input type="text" name="search" placeholder="Search...">
+                <a class="icons" href="#"><img src="hinhanh/search.png" alt=""></a>
+            </form>
+
+            <div class="gh">
+                <img src="hinhanh/icon1.png" alt="">
+                <a href="#" onclick="motab()">Login or Register</a>|
+                <img src="hinhanh/icon2.png" alt="">
+                <a href="giohang.html"> Giỏ hàng: <strong>(0) sản phẩm</strong></a>
+                <div style="margin-top: 10px;font-weight: bolder;"><span style="color: red;font-family:cursive; "
+                        id="time"></span> <span style="margin-left: 5px; color: orange; font-size:x-large;"
+                        id="timeimg"> </span> </div>
+            </div>
+            <script>
+                function motab() {
+                    window.open("dangki.html");
+                }
+            </script>
+        </header>
+        <nav>
+
+            <div class="tt1">
+                <ul>
+                    <li><a href="index.html" style="color:rgb(238, 236, 236);">TRANG CHỦ</a></li>
+                    <li><a href="bestseller.html">BEST SELLER</a></li>
+
+                    <li>
+                        <a href="#" style="padding-bottom: 15px;">SẢN PHẨM</a>
+                        <img class="icon4" src="hinhanh/icon4.png" alt="">
+                        <ul class="menucon">
+
+                        </ul>
+                    </li>
+
+                    <li><a href="khuyenmai.html">KHUYẾN MÃI</a></li>
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                    <li><a href="dovui.html">ĐỐ VUI</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="box_center">
+
+            <!-- tạo div mới để button, thay đổi possition -->
+            <div class="boxbn">
+                <img style="width: 1200px; height: 450px;" id="img" onclick="changeImage()" src="hinhanh/banner0.jpg"
+                    alt="">
+            </div>
+            <div class="boxic">
+
+                <i id="iconl" onclick="imgPrev()" class="fas fa-chevron-left"></i>
+                <i id="iconr" onclick="imgNext()" class="fas fa-chevron-right"></i>
+                <i id="stop" class="far fa-pause-circle" onclick="stop()"></i>
+
+            </div>
+            <div class="bannercon">
+                <a href="#"><img src="hinhanh/bannercon1.jpg" alt=""></a>
+                <a href="#"><img src="hinhanh/bannercon2.png" alt=""></a>
+            </div>
+
+            <div class="spbc" style="margin-bottom: 50px;">
+                <span>SẢN PHẨM TIÊU BIỂU</span>
+               
+            </div>
+
+        </div>
+
+        <div class="box_center2">
+
+
+        </div>
+
+        <div class="next">
+            <button><a class="subnext" href="#">Prev</a></button>
+            <button style="background-color: #fbae40;"><a class="subnext" href="#">1</a></button>
+            <button><a class="subnext" href="#">2</a></button>
+            <button><a class="subnext" href="#">3</a></button>
+            <button><a class="subnext" href="#">Next</a></button>
+
+        </div>
+
+
+        <div class="bannergiaohang">
+            <img src="hinhanh/banner-ship-16-05.png" alt=""></a>
+        </div>
+
+
+        <div class="thuonghieu" style="text-align: center; border-top: 1px solid rgb(187, 181, 181);">THƯƠNG HIỆU
+        </div>
+        <div class="box_center3">
+            <img src="hinhanh/nutrabolics.jpg" alt="">
+            <img src="hinhanh/optimum-nutrition.jpg" alt="">
+            <img src="hinhanh/rule1-protein.jpg" alt="">
+            <img src="hinhanh/san-nutrition-usa.jpg" alt="">
+            <img src="hinhanh/now-sports.jpg" alt="">
+            <img src="hinhanh/nutrabolics.jpg" alt="">
+            <img src="hinhanh/muscletech.jpg" alt="">
+            <img src="hinhanh/muscle-pharm.jpg" alt="">
+            <img src="hinhanh/ast-sports.jpg" alt="">
+            <img src="hinhanh/go-nutrition.jpg" alt="">
+            <img src="hinhanh/myprotein.jpg" alt="">
+            <img src="hinhanh/bpi-sports.jpg" alt="">
+            <img src="hinhanh/mutant.jpg" alt="">
+            <img src="hinhanh/quaker-oats.jpg" alt="">
+            <img src="hinhanh/logo-rsp4.jpg" alt="">
+            <img src="hinhanh/elitelabs-usa.jpg" alt="">
+            <img src="hinhanh/upl_image_1602495847_image_1602495847.png" alt="">
+            <img src="hinhanh/upl_image_1609904177_image_1609904177.png" alt="">
+            <img src="hinhanh/upl_image_1614824479_image_1614824479.png" alt="">
+            <img src="hinhanh/upl_image_1614825086_image_1614825086.jpg" alt="">
+
+        </div>
+
+
+
+        <footer>
+            <div class="thongtin">
+                <span> CÔNG TY CP MUSCLE UP ( GPKD Số 0312956270 Do Sở KH Và ĐT TP Hồ Chí Minh Cấp Ngày 06/10/2014
+                    - GĐ/Sở Hữu Website Huynh Van A) </span><br><br>
+                Số 138 Đường 5 Khu Lakeview city - Phường An Phú - Quận 2 - TP Hồ Chí Minh
+                1900633006 <br><br>
+                kenezmuscle@gmail.com <br><br>
+                muscleup.vn <br>
+            </div>
+            <div class="gioithieu">
+                <h2>THÔNG TIN SHOP</h2><br>
+                Giới thiệu <br>
+                Điều khoản sử dụng <br>
+                Chính sách bảo mật <br>
+                Chính sách đổi trả <br>
+                Thanh toán giao nhận <br>
+                Liên hệ
+            </div>
+            <div class="facebook">
+                <h2>THÔNG TIN THÊM</h2><br>
+                Tích điểm - Đổi quà <br>
+                Kiến thức Dinh Dưỡng<br>
+                Kiến thức Tập Luyện<br>
+                Hướng dẫn mua hàng<br>
+                Hướng dẫn đường đi<br>
+                Tài khoản ngân hàng<br>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

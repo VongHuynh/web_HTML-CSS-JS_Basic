@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực phẩm bổ sung-dinh dưỡng thể hình</title>
+    <link rel="stylesheet" href="css/dovui.css">
+</head>
+
+<body onload="loading()">
+    <div class="container">
+        <header>
+            <div>
+                <img class="logoshop" src="hinhanh/logohp.png" alt=""></li>
+            </div>
+            <form>
+                <input type="text" name="search" placeholder="Search...">
+                <a class="icons" href="#"><img src="hinhanh/search.png" alt=""></a>
+            </form>
+
+            <div class="gh">
+                <img src="hinhanh/icon1.png" alt="">
+                <a href="#">Login or Register</a>|
+                <img src="hinhanh/icon2.png" alt="">
+                <a href="#"> Giỏ hàng: <strong>(0) sản phẩm</strong></a>
+            </div>
+
+        </header>
+        <nav>
+            <div class="tt1">
+                <ul>
+                    <li><a href="index.html" style="color:rgb(238, 236, 236);">TRANG CHỦ</a></li>
+                    <li><a href="bestseller.html">BEST SELLER</a></li>
+
+                    <li>
+                        <a href="#" style="padding-bottom: 15px;">SẢN PHẨM</a>
+                        <img class="icon4" src="hinhanh/icon4.png" alt="">
+                        <ul class="menucon">
+                            <li>
+                                <a class="whey" href="wheyprotein.html">Whey-protein</a>
+                                <ul class="menuchau">
+                                    <li><a href="#"><em> Hydroyzed whey protein</em></a></li>
+                                    <li><a href="#"><em> Whey protein isolate</em></a></li>
+                                    <li><a href="#"><em> Whey protein blend</em></a></li>
+                                    <li><a href="#"><em> Casein protein</em></a></li>
+                                    <li><a href="#"><em> Protein bar</em></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="mass.html">Mass Gainer</a></li>
+                            <li><a href="#">EAAS, BCAAS & Amino</a></li>
+                            <li><a href="#">Fat bunner</a></li>
+                            <li><a href="#">Vitamin và khoáng chất </a></li>
+                            <li><a href="#">Pre-Workout</a></li>
+                            <li><a href="#">Phụ kiện & Dụng cụ</a></li>
+                            <li><a href="#">Thời trang Fitness</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="khuyenmai.html">KHUYẾN MÃI</a></li>
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                    <li><a href="dovui.html">ĐỐ VUI</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- <div class="box_center">
+
+            <img style="width: 1200px; height: 450px;" id="img" onclick="changeImage()" src="hinhanh/banner4.png"
+                alt="">
+            <script>
+                var index = 1;
+                changeImage = function () {
+                    var imgs = ["hinhanh/banner5.jpg", "hinhanh/banner6.jpg", "hinhanh/banner4.png"];
+                    document.getElementById('img').src = imgs[index];
+                    index++;
+                    if (index == 3) {
+                        index = 0;
+                    }
+                }
+                setInterval(changeImage, 3000);
+            </script>
+
+        </div> -->
+
+
+        <div class="box_center2">
+            <div class="fom">
+                <form action="">
+                    <h3>GIẢI PHƯƠNG TRÌNH BẬC 2 ax <sup>2</sup>+bx+c = 0</h3> <br>
+                    <div id="solangiai">
+                        Số lần giải:
+                    </div> <br>
+
+                    <div>
+                        <form action="" >
+                            <label for="">Nhập số a: </label>
+                            <input id="soa" type="text" autocomplete="off"> <br>
+                            <label for="">Nhập số b: </label>
+                            <input id="sob" type="text" autocomplete="off"> <br>
+                            <label for="">Nhập số c: </label>
+                            <input id="soc" type="text" autocomplete="off"> <br>
+                            <button type="button" id="button" onclick="ptb2.giaipt()">Giải PT</button>
+                            <button type="button" onclick="choso()">Cho số</button>
+                            <div id="ketqua">
+                        </form>
+                    </div> <br>
+
+                    <div id="time"></div>
+
+
+
+            </div>
+            </form>
+        </div>
+        <script>
+            var tg=function thoigian(){
+            var today = new Date();
+            var d = today.getDate();
+            var m = today.getMonth();
+            var y = today.getFullYear();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            document.getElementById("time").innerHTML = "Bay giờ là " + d + "/" + m + "/" + y + " " + h + ":" + m + ":" + s;
+            }
+            setInterval(tg,1000);
+
+            // số lần giải
+            function solangiai() {
+                var slx = sessionStorage.getItem("solanxem");
+                if (slx == null)
+                    slx = 0;
+                slx++;
+                sessionStorage.setItem("solanxem", slx);
+                document.getElementById("solangiai").innerHTML = ("Số lần giải: " + (slx - 1) + " lần<br>")
+            }
+            // giải phương trình.
+
+            var ptb2 = new Object();
+            ptb2.giaipt = function () {
+                ptb2.a = document.getElementById("soa").cloneNode().value;
+                ptb2.b = document.getElementById("sob").cloneNode().value;
+                ptb2.c = document.getElementById("soc").cloneNode().value;
+                if(isNaN(ptb2.a)||isNaN(ptb2.b)||isNaN(ptb2.c)){
+                    alert("a,b,c phải là số");
+                    location.reload();
+                }
+                var dental = Math.pow(ptb2.b, 2) - 4 * ptb2.a * ptb2.c;
+                if (dental < 0) {
+                    document.getElementById("ketqua").innerHTML = "Phương trình: " + ptb2.a + "x" + "<sup>2</sup> +" + ptb2.b + "x +" + ptb2.c + "=0 <br> Vô nghiệm";
+                } else if (dental == 0) {
+                    var x0 = -ptb2.b / (2 * ptb2.a);
+                    document.getElementById("ketqua").innerHTML = "Phương trình: " + ptb2.a + "x" + "<sup>2</sup> +" + ptb2.b + "x +" + ptb2.c + "= 0<br> Có nghiệm kép: x1=x2= " + x0;
+                } else {
+                    var x1 = (-ptb2.b + Math.sqrt(dental)) / (2 * ptb2.a);
+                    var x2 = (-ptb2.b - Math.sqrt(dental)) / (2 * ptb2.a);
+                    document.getElementById("ketqua").innerHTML = "Phương trình: " + ptb2.a + "x" + "<sup>2</sup> +" + ptb2.b + "x +" + ptb2.c + "= 0<br> Có 2 nghiệp phân biệt: <br> x1= " + x1 + "<br>x2= " + x2;
+                }
+                solangiai();
+            }
+
+            function loading() {
+                document.getElementById("button").disabled = true;
+            }
+
+            function choso() {
+                document.getElementById("button").disabled = false;
+
+                var x = Math.round(Math.random() * 100);
+                document.getElementById("soa").value = x;
+                var y = Math.round(Math.random() * 100);
+                document.getElementById("sob").value = y;
+                var z = Math.round(Math.random() * 100);
+                document.getElementById("soc").value = z;
+            }
+
+
+        </script>
+    </div>
+
+    <div class="thuonghieu" style="text-align: center; border-top: 1px solid rgb(187, 181, 181);">THƯƠNG HIỆU</div>
+    <div class="box_center3">
+        <img src="hinhanh/nutrabolics.jpg" alt="">
+        <img src="hinhanh/optimum-nutrition.jpg" alt="">
+        <img src="hinhanh/rule1-protein.jpg" alt="">
+        <img src="hinhanh/san-nutrition-usa.jpg" alt="">
+        <img src="hinhanh/now-sports.jpg" alt="">
+        <img src="hinhanh/nutrabolics.jpg" alt="">
+        <img src="hinhanh/muscletech.jpg" alt="">
+        <img src="hinhanh/muscle-pharm.jpg" alt="">
+        <img src="hinhanh/ast-sports.jpg" alt="">
+        <img src="hinhanh/go-nutrition.jpg" alt="">
+        <img src="hinhanh/myprotein.jpg" alt="">
+        <img src="hinhanh/bpi-sports.jpg" alt="">
+        <img src="hinhanh/mutant.jpg" alt="">
+        <img src="hinhanh/quaker-oats.jpg" alt="">
+        <img src="hinhanh/logo-rsp4.jpg" alt="">
+        <img src="hinhanh/elitelabs-usa.jpg" alt="">
+        <img src="hinhanh/upl_image_1602495847_image_1602495847.png" alt="">
+        <img src="hinhanh/upl_image_1609904177_image_1609904177.png" alt="">
+        <img src="hinhanh/upl_image_1614824479_image_1614824479.png" alt="">
+        <img src="hinhanh/upl_image_1614825086_image_1614825086.jpg" alt="">
+
+    </div>
+
+
+
+    <footer>
+        <div class="thongtin">
+            <span> CÔNG TY CP MUSCLE UP ( GPKD Số 0312956270 Do Sở KH Và ĐT TP Hồ Chí Minh Cấp Ngày 06/10/2014
+                - GĐ/Sở Hữu Website Huynh Van A) </span><br><br>
+            Số 138 Đường 5 Khu Lakeview city - Phường An Phú - Quận 2 - TP Hồ Chí Minh
+            1900633006 <br><br>
+            kenezmuscle@gmail.com <br><br>
+            muscleup.vn <br>
+        </div>
+        <div class="gioithieu">
+            <h2>THÔNG TIN SHOP</h2><br>
+            Giới thiệu <br>
+            Điều khoản sử dụng <br>
+            Chính sách bảo mật <br>
+            Chính sách đổi trả <br>
+            Thanh toán giao nhận <br>
+            Liên hệ
+        </div>
+        <div class="facebook">
+            <h2>THÔNG TIN THÊM</h2><br>
+            Tích điểm - Đổi quà <br>
+            Kiến thức Dinh Dưỡng<br>
+            Kiến thức Tập Luyện<br>
+            Hướng dẫn mua hàng<br>
+            Hướng dẫn đường đi<br>
+            Tài khoản ngân hàng<br>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

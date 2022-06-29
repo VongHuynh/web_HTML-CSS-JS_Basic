@@ -1,0 +1,464 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    padding: 0px;
+    margin: 0 auto;
+   
+}
+.container{
+  
+    margin: 0px auto;
+
+}
+/* HEADER*/
+.container>header{
+    background-color: white;
+    height: 80px auto;  
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon4{
+    width:20px ;
+    height: 20px;
+    vertical-align: middle;
+}
+.iconmore{
+   position: absolute;
+   text-align: center;
+}
+.gh>a:hover{
+    text-decoration:underline;
+}
+/* THE DIV*/
+div>a{
+    text-decoration: none;
+    color:black;
+    margin-right: 10px;
+}
+.dangnhap{
+    font-size:medium;
+    position: relative; 
+    margin-right: 50px;
+}
+.logoshop{
+    width:279px;
+    height:90px; 
+    vertical-align: middle;
+}
+div>img{
+    width: 20px;
+    height: 20px;   
+    vertical-align: middle;
+}
+.glv{
+    font-size:medium;
+    color: white;
+    margin-right: 50px;
+}
+.gh{
+    font-size:medium;
+    margin-right: 50px;
+}
+
+
+
+/* menu con*/
+.menucon>li>a{
+    text-decoration: none;
+    color: black;
+    font-size:larger;  
+    display: flex;
+    border: 0.1px solid rgb(238, 236, 236);
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+.menucon{
+    margin-top: 13px;
+    text-align: left;
+    width: 240px;
+    border-radius: 5px;
+    margin-left: -30px;
+    z-index: 1;
+    
+}
+.menucon> li> a:hover{
+    
+    background-color: #f3d4a5;
+    transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+}
+.tt1 ul li{
+    position: relative;
+}
+.tt1>ul>li>.menucon{
+    display: none;
+    list-style: none;
+    background-color: white;
+    position: absolute;  
+}
+
+.tt1 ul li:hover>ul{
+    display: block;
+} 
+/*menu chau*/
+.menuchau{
+    display:none;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: -35px;
+    width: 200px;
+    border-radius: 0px 0px 3px 3px;
+    
+    
+
+}
+.menuchau>li>a:hover{
+    color:#fbae40;
+}
+.menuchau>li>a{
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    font-family: sans-serif;
+    display: block;
+    margin-left: 10px;
+    line-height: 40px;
+    
+}
+
+.menuchaubox2>li>a>em{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+/*  BOX CENTER   */
+.box_center>.spbc{
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+.box_center>.spbc>span{
+text-align: center;
+border-bottom: 1px solid #fbae40;
+font-size: x-large;
+width: 100%;
+}
+
+#categorylist>a:hover{
+    color: rgb(144, 144, 241);
+}
+
+
+.box_center{
+    width: 100%;
+    height: auto;
+    background-color:white;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box_center>.banner{
+    width: 80%;
+    height: 80%;
+    margin-top: 0px;
+   
+}
+.box_center2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  TT1 */
+.tt1{
+    background-color:#fbae40;
+    width: 100%;
+    min-height:50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+}
+
+.tt1>ul>li{
+    list-style: none;
+    position: relative;
+    float: left;
+    padding-right: 50px;
+   
+   
+    
+}
+.tt1>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-variant: normal;
+    
+}
+
+
+.tt1> ul> li>a:hover{
+    color:rgb(245, 231, 231);   
+}
+
+/* BOX_CENTER3*/
+.box_center3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.box_center3>img{
+    width: 150px;
+    height: 47.8px;
+}
+.thuonghieu{
+    color: rgb(121, 116, 116);
+    font-size: xx-large;
+
+}
+
+
+.bannercon{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.bannercon>a>img{
+    width: 473px;
+    height: 168px;
+}
+
+
+
+.bannergiaohang{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.bannergiaohang>img{
+    width: 1000px;
+    height: 230px;
+}
+
+
+/* san pham trang chu*/
+.sp>a>img{
+    width: 55%;
+    height: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sp:hover{
+    transform: scale(1.1);  
+    box-shadow:1px 6px 8px 4px #e7e7e7;
+}
+.sp{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+}
+div>a>.ten{
+    font-size:medium;
+    font-family:cursive;
+    color:black;
+    
+}
+div>a>.gia{
+    color:red;
+    font-weight:bolder;
+    font-size: large;
+    text-align: center;
+   
+}
+.box_center>p{
+    clear: both;
+}/* footer*/
+
+.container>footer{
+    width: 1500;
+    border-top: 5px double orangered;
+    height:350px ;
+    background-color:#666360;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 40px;
+    display: flex;
+    
+}
+footer>.thongtin{
+    width: 30%;
+    min-height:200px;
+    word-spacing: 5px;
+    color: white;
+    text-align: left;
+    
+    margin-right: 50px;
+}
+footer>.thongtin>span{
+    color:#fbae40;
+    font-size: x-large;
+}
+footer>.gioithieu{
+    width: 30%;
+    min-height:200px;
+    word-spacing: 5px;
+    color: white;
+    text-align: left;
+    
+    margin-right: 50px;
+}
+footer>.facebook{
+   
+    width: 30%;
+    min-height:200px;
+    word-spacing: 5px;
+    color: white;
+    text-align: left;
+    
+    margin-right: 50px;
+}
+
+/*  SEARCH */
+input[type="text"] {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 202, 202);
+    border-radius: 5px 0px 0px 5px;
+    outline:none;
+    padding: 5px;
+  }
+  input:hover{
+      background-color:#f3e3cc;
+  }
+ .icons>img{
+     width: 25px;
+     height: 25px;
+ }
+ .icons{
+    color: white;
+    float: right;
+    width: 45px;
+    height: 38px;
+    background:#fbae40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid rgb(209, 202, 202);
+}
+
+/**/
+/* NEXT*/
+.next{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    margin-top:40px ;
+}
+.next button{
+    margin: 5px;
+    border: 1px solid rgb(194, 191, 191);
+    min-width: 33px;
+    height: 33px;
+    background-color: white;
+    padding: 5px;
+}
+.next button:hover{
+    background-color: #fbae40;
+}
+.subnext{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+
+.boxbn{
+    position: relative;
+}
+#iconl{
+    position: absolute;
+    left:80px;
+    bottom: 45%;
+    padding: 8px;
+    border-radius: 20px; 
+    font-size: x-large;
+    color: rgb(207, 204, 204) ;
+
+}
+#iconr{
+    position: absolute;
+    right:80px;
+    bottom: 47%;
+    padding: 8px;
+    border-radius: 20px;  
+    font-size: x-large;
+    color: rgb(207, 204, 204)  ;
+}
+#stop{
+    position: absolute;
+    top: 80%;
+    right:50%;
+    font-size: xx-large;
+    color: rgb(207, 204, 204) ;
+}
+
+#iconl:hover{
+    background-color: rgb(226, 223, 223);
+}
+#iconr:hover{
+    background-color: rgb(226, 223, 223);
+}
+
+
+
+/*   */
+
+.giamgia{
+    border:1px solid red;width:50px; margin-top: 1%;font-family: sans-serif;border-radius: 25px;margin-left: 10px;height: 20px;
+}
+.quatang{
+    border: 1px solid green;width: 105px;border-radius: 25px;margin-left: 90px;margin-top: 1px;font-family: sans-serif;color: green;height: 20px;
+}
